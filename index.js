@@ -10,7 +10,7 @@ app.use('/programs', programsRouter);
 app.use('/clients', clientsRouter);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.json(programs);
 })
 
 app.listen(port, () => {
